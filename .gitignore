@@ -9,3 +9,6 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 .env
+/storage/logs/access.log
+/storage/logs/error.log
+/.phpintel
