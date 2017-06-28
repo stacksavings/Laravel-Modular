@@ -229,7 +229,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
-
+        'Google' => PulkitJalan\Google\Facades\Google::class,
+        'Sheets' => GoogleSheets\Facades\Sheets::class,
     ],
 
 ];
