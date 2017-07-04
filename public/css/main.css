@@ -222,19 +222,6 @@ input:-moz-placeholder {
 .flr {
   float: right; }
 
-.btn {
-  width: 220px;
-  height: 60px;
-  line-height: 60px;
-  background: #00b0a9;
-  font-family: 'Lato', sans-serif;
-  display: inline-block;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px; }
-  .btn:hover {
-    color: #FFF; }
-
 input {
   width: 234px;
   font-size: 15px;
