@@ -16,12 +16,14 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .copy('node_modules/font-awesome/fonts', 'public/fonts')
    .copy('node_modules/pannellum/src/css/img', 'public/css/img')
    .scripts([
-		'node_modules/pannellum/build/pannellum.js'
+		'node_modules/pannellum/build/pannellum.js',
+		'node_modules/rateyo/min/jquery.rateyo.min.js'
 	], 'public/js/all.js')
    .styles([
 	    'public/css/main.css',
 	    'public/css/testimonial.css',
-	    'node_modules/pannellum/build/pannellum.css'
+	    'node_modules/pannellum/build/pannellum.css',
+	    'node_modules/rateyo/min/jquery.rateyo.min.css'
 	], 'public/css/all.css')
    .browserSync({proxy: "stacksavings.dev"});
 

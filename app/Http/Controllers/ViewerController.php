@@ -10,4 +10,9 @@ class ViewerController extends Controller
     {
     	return view('templates.viewer');
     }
+
+    public function form()
+    {
+    	return view('templates.test');
+    }
 }
