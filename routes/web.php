@@ -24,6 +24,8 @@ Route::get('/content', 'ReadSheetController@content');
 Route::get('/panorama', 'ViewerController@panorama');
 Route::get('/form', 'ViewerController@form');
 
+Route::get('/layout', 'LayoutController@layout');
+
 Route::get('auth/facebook', 'Auth\LoginController@redirectToProvider');
 Route::get('auth/facebook/callback', 'Auth\LoginController@handleProviderCallback');
 
