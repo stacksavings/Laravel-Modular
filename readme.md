@@ -152,3 +152,8 @@ File /config/spreadsheets.php
 	'worksheet' => 'livre-lead_testimonial', # Optional
 	'client_secret' => '../stacksavings-18347e7f1ecf.json'
 
+
+
+steps to upgrade php version:
+
+https://community.c9.io/t/laravel-5-3-installation-on-cloud9/9038
