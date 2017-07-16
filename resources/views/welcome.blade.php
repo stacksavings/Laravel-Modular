@@ -74,6 +74,7 @@
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
                         <a href="{{ url('/layout') }}">Layout</a>
+                        <a href="{{ url('/content') }}">Livre</a>
                     @endif
                 </div>
             @endif

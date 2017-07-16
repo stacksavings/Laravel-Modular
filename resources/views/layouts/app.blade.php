@@ -11,8 +11,8 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/all.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/all.css') }}" rel="stylesheet">
 
 {{--     <link href="/livre-4/d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/livre-lead-gen/reset-5f0eeae180a2334c309d693834184dd7.css"
             media="screen" rel="stylesheet" type="text/css">
@@ -81,8 +81,8 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/all.js') }}"></script>
+    <script src="{{ secure_asset('js/app.js') }}"></script>
+    <script src="{{ secure_asset('js/all.js') }}"></script>
     @yield('scripts')
 </body>
 </html>
