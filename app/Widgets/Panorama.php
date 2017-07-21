@@ -12,7 +12,7 @@ class Panorama extends AbstractWidget
      * @var array
      */
     protected $config = [
-
+        'image' => ''
     ];
 
     /**
@@ -21,8 +21,7 @@ class Panorama extends AbstractWidget
      */
     public function run()
     {
-        //
-
+        // Path to widget template
         return view('widgets.panorama', [
             'config' => $this->config,
         ]);

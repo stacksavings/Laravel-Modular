@@ -13,11 +13,6 @@
     <!-- Styles -->
     <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ secure_asset('css/all.css') }}" rel="stylesheet">
-
-{{--     <link href="/livre-4/d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/livre-lead-gen/reset-5f0eeae180a2334c309d693834184dd7.css"
-            media="screen" rel="stylesheet" type="text/css">
-    <link href="/livre-4/d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/livre-lead-gen/page_defaults-4ea087c9e55732d26c9f5fffd761f91b.css"
-            media="screen" rel="stylesheet" type="text/css"> --}}
 </head>
 <body>
     <div id="app">

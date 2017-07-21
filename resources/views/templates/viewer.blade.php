@@ -5,22 +5,10 @@
 		<div class="row">
 			<div class="content">
 				<div class="col-lg-12 col-lg-offset-3">
-					@widget('panorama')
+					@widget('panorama', ["image" => $image])
 				</div>
 				<div class="clearfix"></div>
 			</div>
 		</div>
 	</div>
-@endsection
-
-@section('scripts')
-
-	<script>
-		pannellum.viewer('panorama', {
-		    "type": "equirectangular",
-		    "panorama": "/images/alma.jpg",
-		    "autoLoad": true
-		});
-	</script>
-
 @endsection

@@ -8,11 +8,10 @@ class ViewerController extends Controller
 {
     public function panorama()
     {
-    	return view('templates.viewer');
-    }
+    	# This can be a read data from the spreadsheet
+    	$dummyData = "/images/alma.jpg";
 
-    public function form()
-    {
-    	return view('templates.test');
+    	# Pass the data to the viewer template: ['image' => $dummyData]
+    	return view('templates.viewer', ['image' => $dummyData]);
     }
 }
