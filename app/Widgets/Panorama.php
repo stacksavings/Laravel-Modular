@@ -12,7 +12,9 @@ class Panorama extends AbstractWidget
      * @var array
      */
     protected $config = [
-        'data' => ''
+        'data' => '',
+        'width' => '600px',
+        'height' => '400px'
     ];
 
     /**
