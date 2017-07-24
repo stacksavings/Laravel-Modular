@@ -1,5 +1,4 @@
-<div class="{{ $config['wrapper'] }}">
-	<div id="{{ $config['id'] }}" data-image="{{ $config['image'] }}"></div>
+<div class="{{ $config['data']['wrapper'] }}">
+	<div id="{{ $config['data']['id'] }}" data-image="{{ $config['data']['image'] }}"></div>
 </div>
-{{-- <div id="other"></div> --}}
 
