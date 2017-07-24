@@ -1,4 +1,9 @@
-#panorama {
+#first {
+    width: 600px;
+    height: 400px;
+}
+
+#second {
     width: 600px;
     height: 400px;
 }

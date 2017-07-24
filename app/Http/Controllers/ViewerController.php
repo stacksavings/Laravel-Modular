@@ -11,7 +11,20 @@ class ViewerController extends Controller
     	# This can be a read data from the spreadsheet
     	$dummyData = "/images/alma.jpg";
 
+    	$data = [
+    		'panorama1' => [
+    			'image' => "/images/alma.jpg",
+    			'wrapper' => 'panorama',
+    			'id' => 'first'
+    		],
+    		'panorama2' => [
+    			'image' => "/images/cerro.jpg",
+    			'wrapper' => 'panorama',
+    			'id' => 'second'
+    		]
+    	];
+
     	# Pass the data to the viewer template: ['image' => $dummyData]
-    	return view('templates.viewer', ['image' => $dummyData]);
+    	return view('templates.viewer', ['data' => $data]);
     }
 }
