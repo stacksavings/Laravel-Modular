@@ -75,6 +75,7 @@
                         <a href="{{ url('/register') }}">Register</a>
                         <a href="{{ url('/panorama') }}">Viewer</a>
                         <a href="{{ url('/content') }}">Livre</a>
+                        <a href="{{ url('/layout') }}">Layout</a>
                     @endif
                 </div>
             @endif
