@@ -19,17 +19,17 @@ mix.js('resources/assets/js/app.js', 'public/js')
 		'node_modules/pannellum/build/pannellum.js',
 		'node_modules/rateyo/min/jquery.rateyo.min.js',
 		'public/js/widgets/panorama/panorama.js',
-		'public/js/move-top.js',
-		'public/js/easing.js',
-		'public/js/jquery.flexslider.js',
-		'public/js/slideshow.min.js',
-		'public/js/launcher.js'
+		'public/js/mansion/move-top.js',
+		'public/js/mansion/easing.js',
+		'public/js/mansion/jquery.flexslider.js',
+		'public/js/mansion/slideshow.min.js',
+		'public/js/mansion/launcher.js'
 	], 'public/js/all.js')
    .styles([
 	    'public/css/main.css',
 	    'public/css/testimonial.css',
-	    'public/css/style.css',
-	    'public/css/flexslider.css',
+	    'public/css/mansion/style.css',
+	    'public/css/mansion/flexslider.css',
 	    'node_modules/pannellum/build/pannellum.css',
 	    'node_modules/rateyo/min/jquery.rateyo.min.css',
 	    'public/css/widgets/panorama/panorama.css'
