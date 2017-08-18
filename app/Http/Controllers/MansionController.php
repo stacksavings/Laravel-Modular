@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class LayoutController extends Controller
+class MansionController extends Controller
 {
     private $data = [
         'panorama1' => [
@@ -21,9 +21,8 @@ class LayoutController extends Controller
         ]
     ];
 
-    public function layout()
+    public function index()
     {
-    	// return view('layouts.mylayout', ['data' => $this->data]);
         return view('templates.mansion.index', ['data' => $this->data]); 
     }
 }
