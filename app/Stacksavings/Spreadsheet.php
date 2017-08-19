@@ -54,7 +54,7 @@ class Spreadsheet
      */
     public function get()
     {
-    	return collect($this->data);
+    	return $this->data;
     }
 
     /**

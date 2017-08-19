@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Stacksavings\Spreadsheet;
 
 class MansionController extends Controller
 {
@@ -23,6 +24,12 @@ class MansionController extends Controller
 
     public function index()
     {
+        $sheet = new Spreadsheet();
+        $data = $sheet->read(config('spreadsheets.worksheet'))->get();
+
+        $this->data['panorama1']['image'] = $data['panorama_1'];
+        $this->data['panorama1']['image'] = $data['panorama_1'];
+        
         return view('templates.mansion.index', ['data' => $this->data]); 
     }
 }

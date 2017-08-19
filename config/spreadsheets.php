@@ -18,7 +18,7 @@ return [
     |
     | This value is the name of spreadsheet to read
     */
-	'spreadsheet' => 'SheetsLayout-1',
+	'spreadsheet' => 'mansion',
 
     /*
     |--------------------------------------------------------------------------
@@ -28,7 +28,7 @@ return [
     | This value is the name of worsheet to read
     | This param is optional
     */
-	'worksheet' => 'livre-lead_testimonial',
+	'worksheet' => 'index',
 
     /*
     |--------------------------------------------------------------------------
