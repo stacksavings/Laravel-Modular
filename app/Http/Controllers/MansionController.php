@@ -28,7 +28,7 @@ class MansionController extends Controller
         $data = $sheet->read(config('spreadsheets.worksheet'))->get();
 
         $this->data['panorama1']['image'] = $data['panorama_1'];
-        $this->data['panorama1']['image'] = $data['panorama_2'];
+        $this->data['panorama2']['image'] = $data['panorama_2'];
         
         return view('templates.mansion.index', ['data' => $this->data]); 
     }
