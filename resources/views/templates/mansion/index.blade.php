@@ -63,18 +63,10 @@
 <!-- //work -->
 
 <!-- work-bottom -->
-{{-- 	<div class="work-bottom">
-		<div class="container">
-			<h2>Real estate investment is certainly a vote of confidence on future activity</h2>
-			<div class="agileits_more">
-				<a href="single.html" class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="Learn More"><span>Learn More</span></a>
-			</div>
-		</div>
-	</div> --}}
 	<div class="container-full">
 		<div class="container">
 			<div class="row">
-				@widget('panorama', ["data" => $data['panorama1']])
+				@widget('panorama', ["img" => $data['panorama_1'], 'id' => 'first', 'width' => '100%'])
 			</div>
 		</div>
 	</div>
@@ -189,7 +181,7 @@
 	<div class="container-full">
 		<div class="container">
 			<div class="row">
-				@widget('panorama', ["data" => $data['panorama2']])
+				@widget('panorama', ["img" => $data['panorama_2'], 'id' => 'second', 'width' => '100%'])
 			</div>
 		</div>		
 	</div>
