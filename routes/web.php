@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return redirect('mansion/index');
+    return redirect(env('DEFAULT_LAYOUT') . '/index');
 });
 
 Auth::routes();
@@ -28,7 +28,4 @@ Route::get('/layout', 'LayoutController@layout');
 Route::get('auth/facebook', 'Auth\LoginController@redirectToProvider');
 Route::get('auth/facebook/callback', 'Auth\LoginController@handleProviderCallback');
 
-Route::group(['prefix' => 'mansion'], function()
-{
-    Route::get('index', 'MansionController@index');
-});
+require __DIR__ . '/' . env('DEFAULT_LAYOUT') . '.php';
