@@ -38,6 +38,6 @@ return [
     | This value is the path at client_secret.json file.
     | The file must be ignored in the .gitignore file
     */
-	'client_secret' => '../stacksavings-18347e7f1ecf.json'
+	'client_secret' => '../' . env('GOOGLE_API')
 
 ];
