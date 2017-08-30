@@ -10,16 +10,10 @@ class ReadSheetController extends Controller
     public function test()
     {
         $sheet = new Spreadsheet();
-        $data = $sheet->read(config('spreadsheets.worksheet'))->get(); 
+        $data = $sheet->read('header')->get(); 
+        $ar = ['hola'];
 
+        $data = array_merge($data, $ar);
 		dd($data);	
-    }
-
-    public function content()
-    {
-        $sheet = new Spreadsheet();
-        $data = $sheet->read(config('spreadsheets.worksheet'))->get(); 
-
-    	return view('templates.content', ['data' => $data]);
     }
 }

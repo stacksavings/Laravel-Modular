@@ -2,18 +2,17 @@
 
 namespace App\Widgets;
 
+use App\Stacksavings\Spreadsheet;
 use Arrilot\Widgets\AbstractWidget;
 
-class Form extends AbstractWidget
+class Header extends AbstractWidget
 {
     /**
      * The configuration array.
      *
      * @var array
      */
-    protected $config = [
-        'style' = config('rating.key')
-    ];
+    protected $config = [];
 
     /**
      * Treat this method as a controller action.
@@ -21,9 +20,11 @@ class Form extends AbstractWidget
      */
     public function run()
     {
-        //
+        $sheet = new Spreadsheet();
+        $data = $sheet->read('header')->get(); 
+        $this->config = array_merge($this->config, $data);
 
-        return view('widgets.form', [
+        return view('widgets.header', [
             'config' => $this->config,
         ]);
     }
