@@ -82,24 +82,24 @@
 					<h3>Flickr <span>Feed</span></h3>
 					<div class="flickr-grids">
 						<div class="flickr-grid agileits_w3layouts_flickr">
-							<a href="single.html"><img src="images/3.jpg" alt=" " class="img-responsive" /></a>
+							<a href="single.html"><img src="{{ asset('images/3.jpg') }}" alt=" " class="img-responsive" /></a>
 						</div>
 						<div class="flickr-grid  agileits_w3layouts_flickr">
-							<a href="single.html"><img src="images/5.jpg" alt=" " class="img-responsive" /></a>
+							<a href="single.html"><img src="{{ asset('images/5.jpg') }}" alt=" " class="img-responsive" /></a>
 						</div>
 						<div class="flickr-grid  agileits_w3layouts_flickr">
-							<a href="single.html"><img src="images/4.jpg" alt=" " class="img-responsive" /></a>
+							<a href="single.html"><img src="{{ asset('images/4.jpg') }}" alt=" " class="img-responsive" /></a>
 						</div>
 						<div class="clearfix"> </div>
 						
 						<div class="flickr-grid  agileits_w3layouts_flickr">
-							<a href="single.html"><img src="images/6.jpg" alt=" " class="img-responsive" /></a>
+							<a href="single.html"><img src="{{ asset('images/6.jpg') }}" alt=" " class="img-responsive" /></a>
 						</div>
 						<div class="flickr-grid  agileits_w3layouts_flickr">
-							<a href="single.html"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
+							<a href="single.html"><img src="{{ asset('images/7.jpg') }}" alt=" " class="img-responsive" /></a>
 						</div>
 						<div class="flickr-grid  agileits_w3layouts_flickr">
-							<a href="single.html"><img src="images/8.jpg" alt=" " class="img-responsive" /></a>
+							<a href="single.html"><img src="{{ asset('images/8.jpg') }}" alt=" " class="img-responsive" /></a>
 						</div>
 						<div class="clearfix"> </div>
 					</div>

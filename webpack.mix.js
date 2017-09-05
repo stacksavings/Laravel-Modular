@@ -17,19 +17,22 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .copy('node_modules/pannellum/src/css/img', 'public/css/img')
    .scripts([
 		'node_modules/pannellum/build/pannellum.js',
-		'node_modules/rateyo/min/jquery.rateyo.min.js',
+		'node_modules/vanilla-lazyload/dist/lazyload.min.js',
 		'public/js/widgets/panorama/panorama.js',
 		'public/js/mansion/move-top.js',
 		'public/js/mansion/easing.js',
 		'public/js/mansion/jquery.flexslider.js',
+		'public/js/mansion/dcalendar.picker.js',
 		'public/js/mansion/slideshow.min.js',
-		'public/js/mansion/launcher.js'
+		'public/js/mansion/launcher.js',
+		'public/js/mansion/jquery.picEyes.js',
+		'public/js/mansion/bars.js'
 	], 'public/js/all.js')
    .styles([
-	    'public/css/main.css',
-	    'public/css/testimonial.css',
 	    'public/css/mansion/style.css',
 	    'public/css/mansion/flexslider.css',
+		'public/css/mansion/dcalendar.picker.css',
+		'public/css/mansion/imagehover.css',
 	    'node_modules/pannellum/build/pannellum.css',
 	    'node_modules/rateyo/min/jquery.rateyo.min.css',
 	    'public/css/widgets/panorama/panorama.css'

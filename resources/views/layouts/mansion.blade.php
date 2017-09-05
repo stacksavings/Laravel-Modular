@@ -18,7 +18,16 @@
 </head>
 <body>
     <div id="app">
-        @include('templates.mansion.banner')
+        @php
+            $uri = $_SERVER['REQUEST_URI'];
+        @endphp
+
+        @if($uri == '/mansion/index')
+            @include('templates.mansion.banner')
+        @else
+            @include('templates.mansion.second-banner')
+        @endif
+        
 
         @yield('content')
 
@@ -28,7 +37,6 @@
     <!-- Scripts -->
     <script src="{{ secure_asset('js/app.js') }}"></script>
     <script src="{{ secure_asset('js/all.js') }}"></script>
-    @yield('scripts')
     <script type="text/javascript">
 
         addEventListener("load", function() { 
@@ -58,9 +66,13 @@
             }
           });
 
-          $(".flexslider ol.flex-control-nav").hide();
-          $(".flexslider ul.flex-direction-nav").hide();
+        $(".flexslider ol.flex-control-nav").hide();
+        $(".flexslider ul.flex-direction-nav").hide();
+        
+        var myLazyLoad = new LazyLoad();
+        
         });
     </script>
+    @yield('scripts')
 </body>
 </html>

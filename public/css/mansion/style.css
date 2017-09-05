@@ -62,7 +62,7 @@ input[type="submit"],input[type="reset"],.w3layouts_mail_grid_left2 a,.w3agile_s
 .navbar-brand {
     height: 84px;
     padding: 20px 0 0;
-    font-size: 2.6em;
+    font-size: 1.2em;
     line-height: 45px;
 }
 .navbar-brand span {
@@ -95,7 +95,6 @@ input[type="submit"],input[type="reset"],.w3layouts_mail_grid_left2 a,.w3agile_s
     border: none;
 }
 .navbar-right {
-    float: left !important;
     margin-right: 0;
     margin-left: 5em;
 }
@@ -1081,7 +1080,7 @@ ul.tag2:last-child {
     height: 50px;
     background: #707070;
     border-radius: 40px;
-    top: -20%;
+    top: -15%;
     left: 5%;
     text-align: center;
 }

@@ -95,15 +95,15 @@
 									<p class="w3_builder">Co-ordinator</p>
 								</div>
 								<div class="w3_testimonials_grid_leftr">
-									<img src="images/2-.jpg" alt=" " class="img-responsive" />
+									<img src="{{ asset('images/2-.jpg') }}" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
 							<div class="col-md-2 w3_testimonials_grid_right">
-								<img src="images/1.png" alt=" " class="img-responsive" />
+								<img src="{{ asset('images/1.png') }}" alt=" " class="img-responsive" />
 							</div>
 							<div class="col-md-2 w3_testimonials_grid_right">
-								<img src="images/2.png" alt=" " class="img-responsive" />
+								<img src="{{ asset('images/2.png') }}" alt=" " class="img-responsive" />
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -121,15 +121,15 @@
 									<p class="w3_builder">Builder</p>
 								</div>
 								<div class="w3_testimonials_grid_leftr">
-									<img src="images/1-.jpg" alt=" " class="img-responsive" />
+									<img src="{{ asset('images/1-.jpg') }}" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
 							<div class="col-md-2 w3_testimonials_grid_right">
-								<img src="images/2.png" alt=" " class="img-responsive" />
+								<img src="{{ asset('images/2.png') }}" alt=" " class="img-responsive" />
 							</div>
 							<div class="col-md-2 w3_testimonials_grid_right">
-								<img src="images/3.png" alt=" " class="img-responsive" />
+								<img src="{{ asset('images/3.png') }}" alt=" " class="img-responsive" />
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -147,15 +147,15 @@
 									<p class="w3_builder">Builder</p>
 								</div>
 								<div class="w3_testimonials_grid_leftr">
-									<img src="images/3-.jpg" alt=" " class="img-responsive" />
+									<img src="{{ asset('images/3-.jpg') }}" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</div>
 							<div class="col-md-2 w3_testimonials_grid_right">
-								<img src="images/1.png" alt=" " class="img-responsive" />
+								<img src="{{ asset('images/1.png') }}" alt=" " class="img-responsive" />
 							</div>
 							<div class="col-md-2 w3_testimonials_grid_right">
-								<img src="images/3.png" alt=" " class="img-responsive" />
+								<img src="{{ asset('images/3.png') }}" alt=" " class="img-responsive" />
 							</div>
 							<div class="clearfix"> </div>
 						</div>
