@@ -22,7 +22,7 @@
             $uri = $_SERVER['REQUEST_URI'];
         @endphp
 
-        @if($uri == '/mansion/index')
+        @if($uri == '/mansion/index' or $uri == '/public/mansion/index')
             @include('templates.mansion.banner')
         @else
             @include('templates.mansion.second-banner')
