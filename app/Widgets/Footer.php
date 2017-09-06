@@ -2,10 +2,9 @@
 
 namespace App\Widgets;
 
-use App\Stacksavings\Spreadsheet;
 use Arrilot\Widgets\AbstractWidget;
 
-class Header extends AbstractWidget
+class Footer extends AbstractWidget
 {
     /**
      * The configuration array.
@@ -13,9 +12,11 @@ class Header extends AbstractWidget
      * @var array
      */
     protected $config = [
-        'main_title' => '',
-        'slogan' => '',
-        'menu' => []
+        "footer_title" => "",
+        "sentence" => "",
+        "phone" => "",
+        "address" => "",
+        "copyright" => ""
     ];
 
     /**
@@ -24,7 +25,9 @@ class Header extends AbstractWidget
      */
     public function run()
     {
-        return view('widgets.header', [
+        //
+
+        return view('widgets.footer', [
             'config' => $this->config,
         ]);
     }

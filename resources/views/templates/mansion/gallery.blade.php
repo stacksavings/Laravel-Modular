@@ -1,5 +1,9 @@
 @extends('layouts.mansion')
 
+@section('header')
+    @include('templates.mansion.second-banner')
+@endsection
+
 @section('content')
 <!-- service-breadcrumb -->
 	<div class="service-breadcrumb">
@@ -142,6 +146,16 @@
 		</div>
 	</div>
 <!-- //gallery -->
+@endsection
+
+@section('footer')
+	@widget('footer', [
+        "footer_title" => $common["footer_title"],
+        "sentence" => $common["sentence"],
+        "phone" => $common["phone"],
+        "address" => $common["address"],
+        "copyright" => $common["copyright"]
+    ])
 @endsection
 
 @section('scripts')

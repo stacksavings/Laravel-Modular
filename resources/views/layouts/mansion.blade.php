@@ -18,20 +18,9 @@
 </head>
 <body>
     <div id="app">
-        @php
-            $uri = $_SERVER['REQUEST_URI'];
-        @endphp
-
-        @if($uri == '/mansion/index' or $uri == '/public/mansion/index')
-            @include('templates.mansion.banner')
-        @else
-            @include('templates.mansion.second-banner')
-        @endif
-        
-
+        @yield('header')
         @yield('content')
-
-        @include('templates.mansion.footer')        
+        @yield('footer')       
     </div>
 
     <!-- Scripts -->

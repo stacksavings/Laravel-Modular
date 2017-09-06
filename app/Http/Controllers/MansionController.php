@@ -10,28 +10,41 @@ class MansionController extends Controller
     public function index()
     {
         $sheet = new Spreadsheet();
-        $data = $sheet->read(config('spreadsheets.worksheet'))->get();
-        
-        return view('templates.mansion.index', ['data' => $data]); 
+        $data = $sheet->read('index')->get();
+        $common = $sheet->read('common')->get();
+
+        return view('templates.mansion.index', ['data' => $data, 'common' => $common]); 
     }
 
     public function services()
     {
-    	return view('templates.mansion.services');
+        $sheet = new Spreadsheet();
+        $common = $sheet->read('common')->get();
+
+    	return view('templates.mansion.services', ['common' => $common]);
     }
 
     public function about()
     {
-    	return view('templates.mansion.about');
+        $sheet = new Spreadsheet();
+        $common = $sheet->read('common')->get();
+
+    	return view('templates.mansion.about', ['common' => $common]);
     }
 
     public function gallery()
     {
-    	return view('templates.mansion.gallery');
+        $sheet = new Spreadsheet();
+        $common = $sheet->read('common')->get();
+
+    	return view('templates.mansion.gallery', ['common' => $common]);
     }
 
     public function mail()
     {
-    	return view('templates.mansion.mail');
+        $sheet = new Spreadsheet();
+        $common = $sheet->read('common')->get();
+        
+    	return view('templates.mansion.mail', ['common' => $common]);
     }
 }

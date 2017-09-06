@@ -1,5 +1,10 @@
 @extends('layouts.mansion')
 
+@section('header')
+    @include('templates.mansion.banner')
+            {{-- @include('templates.mansion.second-banner') --}}
+@endsection
+
 @section('content')
 
 <!-- work -->
@@ -168,16 +173,6 @@
 <!-- //testimonials -->
 
 <!-- newsletter -->
-{{-- 	<div class="agileits_w3layouts newsletter">
-		<div class="container">
-			<p class="wthree_para wthree_para1">Newsletter</p>
-			<h3 class="w3ls_head w3ls_head1">Subscribe to us</h3>
-			<form action="#" method="post">
-				<input class="email" type="email" name="Email" placeholder="Email" required="">
-				<input type="submit" value="Submit">
-			</form>
-		</div>
-	</div> --}}
 	<div class="container-full">
 		<div class="container">
 			<div class="row">
@@ -187,4 +182,14 @@
 	</div>
 <!-- //newsletter -->
 
+@endsection
+
+@section('footer')
+	@widget('footer', [
+        "footer_title" => $common["footer_title"],
+        "sentence" => $common["sentence"],
+        "phone" => $common["phone"],
+        "address" => $common["address"],
+        "copyright" => $common["copyright"]
+    ])
 @endsection

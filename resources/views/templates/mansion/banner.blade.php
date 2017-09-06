@@ -1,6 +1,10 @@
 <div class="banner">
 	<div class="container">
-		@widget('header')
+		@widget('header', [
+	        "main_title" => $common["main_title"],
+	        "slogan" => $common["slogan"],
+	        "menu" => $common["menu"]
+	    ])
 		<div class="w3l_banner_info">
 			<section class="slider">
 				<div class="flexslider">
