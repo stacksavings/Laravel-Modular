@@ -12,7 +12,7 @@ class LayoutComposer {
     {
         $uri = $_SERVER['REQUEST_URI'];
 
-        if ($uri == '/mansion/index' or $uri == 'public/mansion/index') {
+        if ($uri == '/mansion/index' or $uri == '/public/mansion/index') {
             $this->header = 'templates.mansion.banner';
         } else {
             $this->header = 'templates.mansion.second-banner';
