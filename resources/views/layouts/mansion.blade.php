@@ -18,9 +18,18 @@
 </head>
 <body>
     <div id="app">
-        @yield('header')
-        @yield('content')
-        @yield('footer')       
+    
+        @include($header)
+        
+        @include('templates.mansion.content')
+
+        @widget('footer', [
+            "footer_title" => $common["footer_title"],
+            "sentence" => $common["sentence"],
+            "phone" => $common["phone"],
+            "address" => $common["address"],
+            "copyright" => $common["copyright"]
+        ])
     </div>
 
     <!-- Scripts -->

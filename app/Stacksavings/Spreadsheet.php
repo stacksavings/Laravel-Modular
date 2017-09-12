@@ -7,6 +7,8 @@ use Google_Service_Sheets;
 use Google\Spreadsheet\SpreadsheetService;
 use Google\Spreadsheet\ServiceRequestFactory;
 use Google\Spreadsheet\DefaultServiceRequest;
+use Google\Spreadsheet\Exception\WorksheetNotFoundException;
+use Google\Spreadsheet\Exception\SpreadsheetNotFoundException;
 
 class Spreadsheet
 {
@@ -43,6 +45,10 @@ class Spreadsheet
      */
     private function setData($data = null)
     {
+        if (empty($data)) {
+            abort('204');
+        }
+
     	$this->data = $this->parseData($data);
     }
 
@@ -97,16 +103,23 @@ class Spreadsheet
      */
     public function read($namesheet = '')
     {
-		if (empty($namesheet)) {
-			abort('404', 'The worksheet is empty.');
-		}
-
-		$spreadsheet = $this->client->getSpreadsheetFeed()
-		   ->getByTitle(config('spreadsheets.spreadsheet'));
+        try {
+            $spreadsheet = $this->client->getSpreadsheetFeed()
+                ->getByTitle(config('spreadsheets.spreadsheet'));   
+        } catch (SpreadsheetNotFoundException $e) {
+            abort('503', 'Service unavailable'); 
+        }
 		
 		$worksheetFeed = $spreadsheet->getWorksheetFeed();
-		$worksheet = $worksheetFeed->getByTitle($namesheet);
+
+        try {
+            $worksheet = $worksheetFeed->getByTitle($namesheet);
+        } catch (WorksheetNotFoundException $e) {
+            abort('404', 'Page not found');      
+        }
+		
 		$listFeed = $worksheet->getListFeed();
+        $representative = [];
 
 		foreach ($listFeed->getEntries() as $entry) {
 		   $representative[] = $entry->getValues();

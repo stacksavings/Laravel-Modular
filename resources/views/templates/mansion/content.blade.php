@@ -1,12 +1,3 @@
-@extends('layouts.mansion')
-
-@section('header')
-    @include('templates.mansion.banner')
-            {{-- @include('templates.mansion.second-banner') --}}
-@endsection
-
-@section('content')
-
 <!-- work -->
 	<div class="work">
 		<div class="container">
@@ -181,15 +172,3 @@
 		</div>		
 	</div>
 <!-- //newsletter -->
-
-@endsection
-
-@section('footer')
-	@widget('footer', [
-        "footer_title" => $common["footer_title"],
-        "sentence" => $common["sentence"],
-        "phone" => $common["phone"],
-        "address" => $common["address"],
-        "copyright" => $common["copyright"]
-    ])
-@endsection

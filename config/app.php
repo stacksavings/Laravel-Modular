@@ -179,6 +179,7 @@ return [
         Laravel\Socialite\SocialiteServiceProvider::class,
         Facuz\Theme\ThemeServiceProvider::class,
         Arrilot\Widgets\ServiceProvider::class,
+        App\Providers\ComposerServiceProvider::class,
 
     ],
 

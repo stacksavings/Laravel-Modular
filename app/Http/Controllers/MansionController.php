@@ -7,44 +7,15 @@ use App\Stacksavings\Spreadsheet;
 
 class MansionController extends Controller
 {
-    public function index()
+    public function page($page)
     {
+        $page = htmlentities($page);
         $sheet = new Spreadsheet();
-        $data = $sheet->read('index')->get();
-        $common = $sheet->read('common')->get();
 
-        return view('templates.mansion.index', ['data' => $data, 'common' => $common]); 
-    }
-
-    public function services()
-    {
-        $sheet = new Spreadsheet();
-        $common = $sheet->read('common')->get();
-
-    	return view('templates.mansion.services', ['common' => $common]);
-    }
-
-    public function about()
-    {
-        $sheet = new Spreadsheet();
-        $common = $sheet->read('common')->get();
-
-    	return view('templates.mansion.about', ['common' => $common]);
-    }
-
-    public function gallery()
-    {
-        $sheet = new Spreadsheet();
-        $common = $sheet->read('common')->get();
-
-    	return view('templates.mansion.gallery', ['common' => $common]);
-    }
-
-    public function mail()
-    {
-        $sheet = new Spreadsheet();
-        $common = $sheet->read('common')->get();
+        $data = $sheet->read($page)->get();
         
-    	return view('templates.mansion.mail', ['common' => $common]);
+        $common = $sheet->read('common')->get();
+
+        return view('layouts.mansion', ['data' => $data, 'common' => $common]); 
     }
 }
