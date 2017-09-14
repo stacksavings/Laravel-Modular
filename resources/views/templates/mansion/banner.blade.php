@@ -10,18 +10,10 @@
 				<div class="flexslider">
 					<ul class="slides">
 						<li>
+							<!-- TODO: the two text areas for this should be editable on a page using
+							the text widget -->
 							<div class="wthree_banner_info_grid">
-								<h3><i>Real estate is the</i><span>closest thing to the proverbial pot of gold</span></h3>
-							</div>
-						</li>
-						<li>
-							<div class="wthree_banner_info_grid">
-								<h3><i>Real estate is the</i><span>best investment in the world.</span></h3>
-							</div>
-						</li>
-						<li>
-							<div class="wthree_banner_info_grid">
-								<h3><i>Real estate is the</i><span>art of becoming a valuable advisor</span></h3>
+								<h3><i>Editable-caption-1</i><span>editable-caption-2</span></h3>
 							</div>
 						</li>
 					</ul>

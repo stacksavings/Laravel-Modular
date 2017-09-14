@@ -33,6 +33,9 @@ input[type="submit"],input[type="reset"],.w3layouts_mail_grid_left2 a,.w3agile_s
 	-ms-transition: .5s ease-in;
 }
 /*-- banner --*/
+
+/*-- TODO: the banner.jpg image should be editable for each page, so that the user can 
+set the image to be shown at the top of a page, instead of using the same one always */
 .banner{
 	background:url(../images/banner.jpg) no-repeat 0px 0px;
 	background-size:cover;
