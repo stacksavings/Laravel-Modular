@@ -1,4 +1,4 @@
-<div class="banner">
+<div class="banner custom-banner" style="background: url({{ $data['background'] or '../images/banner.jpg' }})">
 	<div class="container">
 		@widget('header', [
 	        "main_title" => $common["main_title"],
