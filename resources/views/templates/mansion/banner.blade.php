@@ -13,7 +13,7 @@
 							<!-- TODO: the two text areas for this should be editable on a page using
 							the text widget -->
 							<div class="wthree_banner_info_grid">
-								<h3><i>Editable-caption-1</i><span>editable-caption-2</span></h3>
+								<h3><i>{{ $data['header_text'] or 'Header Text' }}</i><span>{{ $data['header_title'] or 'Header Title' }}</span></h3>
 							</div>
 						</li>
 					</ul>

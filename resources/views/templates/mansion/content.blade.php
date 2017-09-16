@@ -1,12 +1,8 @@
 
 	<!-- 	//TODO: this should be from text widget, so there is just one title per page, 
 	both title fields are optional, if any field is not filled out on sheet is should just skip showing it  -->
-	<div class="work">
-		<div class="container">
-			<p class="wthree_para">Title1 field</p>
-			<h3 class="w3ls_head">Title2 field</h3>
-		</div>
-	</div>
+
+	@include('templates.mansion.title-content')
 	
 	<!-- 	TODO: 
 	
@@ -36,7 +32,22 @@
 	<div class="container-full">
 		<div class="container">
 			<div class="row">
-				@widget('panorama', ["img" => $data['panorama_1'], 'id' => 'first', 'width' => '100%'])
+				@if(isset($data['contents']))
+					@foreach($data['contents'] as $content)
+						<article class="paragraph-wrapper">
+							<p class="paragraph">
+								{{ $content['text'] or " " }}
+							</p>
+						</article>
+						@if(isset($content['panorama']) and !empty($content['panorama']))
+							@widget('panorama', [
+								"img" => $content['panorama'], 
+								'id' => $content['panorama_id'], 
+								'width' => $content['panorama_width']
+							])
+						@endif
+					@endforeach
+				@endif
 			</div>
 		</div>
 	</div>
